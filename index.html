@@ -65,12 +65,14 @@
     <main class="main-sectiion-container">
       <!-- habit section starts here -->
       <section class="habit-section-container">
-        <h1 class="habit-section-title">Change Your Habits</h1>
-        <p class="habit-section-description">
-          We believe fitness should be accessible to everyone, everywhere,
-          regardless of income or <br />
-          access to a gym.
-        </p>
+        <div class="habit-section-title-des">
+          <h1 class="habit-section-title">Change Your Habits</h1>
+          <p class="habit-section-description">
+            Transform your habits, transform your life. Our inclusive fitness
+            programs empower you <br />to achieve your goals, no matter where
+            you are.
+          </p>
+        </div>
         <div class="habit-types-container">
           <div class="habit-type-content">
             <img
@@ -80,16 +82,15 @@
             />
             <h3 class="habit-name">Movement</h3>
             <p class="habit-details">
-              We believe fitness should be <br />
-              accessible to everyone
+              Move freely, live fully. <br />Fitness for all.
             </p>
           </div>
           <div class="habit-type-content">
             <img src="./images/time.png" alt="Time" class="habit-image" />
             <h3 class="habit-name">Time</h3>
             <p class="habit-details">
-              We believe fitness should be <br />
-              accessible to everyone
+              Busy life? Fit fitness in. <br />
+              Anytime, anywhere.
             </p>
           </div>
           <div class="habit-type-content">
@@ -100,8 +101,8 @@
             />
             <h3 class="habit-name">Practice</h3>
             <p class="habit-details">
-              We believe fitness should be <br />
-              accessible to everyone
+              Build healthy habits. <br />
+              Progress, not perfection.
             </p>
           </div>
           <div class="habit-type-content">
@@ -112,8 +113,8 @@
             />
             <h3 class="habit-name">Weight Loss</h3>
             <p class="habit-details">
-              We believe fitness should be <br />
-              accessible to everyone
+              Sustainable change. Achieve<br />
+              your goals. Feel great.
             </p>
           </div>
         </div>
@@ -124,9 +125,9 @@
         <div class="featured-box-content">
           <h1 class="featured-content-title">Run an Extra <br />Mile Easily</h1>
           <p class="featured-content-desctription">
-            We believe fitness should be accessible to everyone,<br />
-            everywhere, regardless of income or access to a gym. With <br />
-            hundreds of professional workouts.
+            We believe in unlocking your unique potential, <br />helping you go
+            the extra mile. With hundreds of professional <br />workouts
+            achieving your fitness goals is possible.
           </p>
           <button id="hero-btn-1"><a href="#">Join Now</a></button>
         </div>
@@ -135,139 +136,39 @@
         </div>
       </section>
       <!-- featured box section ends here -->
-      <!-- trainings and exercises section starts here -->
-      <section class="training-exercise-section">
-        <div class="training-exercise-content">
-          <h1>Trainings and Exercises</h1>
-          <p>
-            We believe fitness should be accessible to everyone, everywhere,
-            regardless of income or <br />
-            access to a gym.
-          </p>
-        </div>
-        <!-- div.t-e-container>div.training-exercise-types*6>p.training-description{Leg Press: Works the <br/> quardriceps and glutes} -->
-        <div class="t-e-container">
-          <div
-            class="training-exercise-types"
-            style="
-              background-image: url(./images/exercise1.jpg);
-              background-repeat: no-repeat;
-              background-size: cover;
-              background-position: center;
-            "
-          >
-            <p class="training-description">
-              Leg Press: Works the <br />
-              quardriceps and glutes
-            </p>
-          </div>
-          <div
-            class="training-exercise-types"
-            style="
-              background-image: url(./images/exercise2.png);
-              background-repeat: no-repeat;
-              background-size: cover;
-              background-position: center;
-            "
-          >
-            <p class="training-description">
-              Leg Press: Works the <br />
-              quardriceps and glutes
-            </p>
-          </div>
-          <div
-            class="training-exercise-types"
-            style="
-              background-image: url(./images/exercise3.png);
-              background-repeat: no-repeat;
-              background-size: cover;
-              background-position: center;
-            "
-          >
-            <p class="training-description">
-              Leg Press: Works the <br />
-              quardriceps and glutes
-            </p>
-          </div>
-          <div
-            class="training-exercise-types"
-            style="
-              background-image: url(./images/exercise4.png);
-              background-repeat: no-repeat;
-              background-size: cover;
-              background-position: center;
-            "
-          >
-            <p class="training-description">
-              Leg Press: Works the <br />
-              quardriceps and glutes
-            </p>
-          </div>
-          <div
-            class="training-exercise-types"
-            style="
-              background-image: url(./images/exercise5.jpg);
-              background-repeat: no-repeat;
-              background-size: cover;
-              background-position: center;
-            "
-          >
-            <p class="training-description">
-              Leg Press: Works the <br />
-              quardriceps and glutes
-            </p>
-          </div>
-          <div
-            class="training-exercise-types"
-            style="
-              background-image: url(./images/exercise6.jpg);
-              background-repeat: no-repeat;
-              background-size: cover;
-              background-position: center;
-            "
-          >
-            <p class="training-description">
-              Leg Press: Works the <br />
-              quardriceps and glutes
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- training and exercise section ends here -->
       <!-- bmi calculator section starts here -->
       <section class="bmi-calculator-section">
         <div class="bmi-title-description">
           <h1>BMI Calculator</h1>
           <p>
-            We believe fitness should be accessible to everyone, everywhere,
-            regardless of income or <br />
-            access to a gym.
+            We believe in informed decisions, personalized plans. Calculate your
+            BMI, unlock insights, <br />optimize your fitness.
           </p>
         </div>
         <div class="bmi-calculator-container">
           <div class="bmi-calculator-container-left">
             <h2>BMI Calculator Chart</h2>
             <table>
-              <tr style="font-weight: bold; font-style: italic">
-                <td>BMI</td>
-                <td>Weight Status</td>
+              <tr>
+                <th id="table-head">BMI</th>
+                <th id="table-head">Weight Status</th>
               </tr>
               <tr>
-                <td>Below 18.5</td>
-                <td>Underweight</td>
+                <td id="table-data">Below 18.5</td>
+                <td id="table-data">Underweight</td>
               </tr>
               <tr>
-                <td>18.5 - 24.9</td>
-                <td>Healthy</td>
+                <td id="table-data">18.5 - 24.9</td>
+                <td id="table-data">Healthy</td>
               </tr>
               <tr>
-                <td>25.0 - 29.9</td>
-                <td>Overweight</td>
+                <td id="table-data">25.0 - 29.9</td>
+                <td id="table-data">Overweight</td>
               </tr>
 
               <tr>
-                <td>30.0 - and Above</td>
-                <td>Obese</td>
+                <td id="table-data">30.0 - and Above</td>
+                <td id="table-data">Obese</td>
               </tr>
             </table>
           </div>
