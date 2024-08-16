@@ -499,6 +499,8 @@ input {
   text-align: center;
   color: #8a8a8a;
   margin-top: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5rem;
 }
 
 .team-member-box-container {
@@ -528,12 +530,24 @@ input {
   top: 14.5rem;
   left: 10px;
   background-color: transparent;
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
 }
 .team-member-box-container .member-title {
   position: relative;
   top: 14.5rem;
   left: 10px;
   background-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
 }
 
 /* team section style ends here  */
@@ -577,6 +591,11 @@ footer {
 .footer-description {
   background-color: #191919;
   color: #878787;
+
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 0.01875rem;
 }
 .footer-right-container {
   display: flex;
