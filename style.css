@@ -21,7 +21,9 @@ header {
   background: linear-gradient(180deg, #111 70%, rgba(119, 119, 119, 0) 100%);
   margin: 0 auto;
 }
-
+header > nav > svg {
+  display: none;
+}
 .hero-container {
   max-width: 90rem;
 }
@@ -127,6 +129,11 @@ header {
   bottom: 4rem;
   right: 15rem;
   text-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
 .hero-title {
@@ -172,6 +179,10 @@ header {
   padding: 0.8rem 3rem;
   font-size: 1.2rem;
 }
+#hero-btn-1 span {
+  background-color: transparent;
+}
+
 #hero-btn-1 a {
   text-decoration: none;
   background-color: transparent;
@@ -643,3 +654,186 @@ footer hr {
   text-decoration: none;
 }
 /* footer section style ends here  */
+
+/* mobile responsive media query starts here */
+
+@media screen and (max-width: 576px) {
+  .nav-container {
+    display: flex;
+    width: 22.0625rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  header > nav > svg {
+    display: inline;
+    cursor: pointer;
+  }
+  .menu-items-container {
+    display: none;
+  }
+  .hero-container {
+    display: flex;
+    width: 22rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.75rem;
+  }
+  .hero-title {
+    margin-top: 3rem;
+    background-color: transparent;
+  }
+  .hero-title {
+    color: #fff;
+    font-family: Inter;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+    background-color: transparent;
+  }
+  .hero-title span {
+    color: #fff;
+    font-family: Miama;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50%;
+    background-color: transparent;
+  }
+  .hero-description {
+    width: 17.125rem;
+    margin-top: 2rem;
+    color: #8a8a8a;
+    background-color: transparent;
+    line-height: 1.5rem;
+    letter-spacing: 0.03125rem;
+  }
+
+  .hero-btn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    gap: 0.875rem;
+  }
+
+  #hero-btn-1 {
+    padding: 1rem 2.5rem;
+    border-radius: 2.625rem;
+    background: #e6533c;
+  }
+  #hero-btn-1 span {
+    display: none;
+  }
+  #hero-btn-1 a {
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 1.125rem;
+    text-wrap: nowrap;
+  }
+
+  #hero-btn-2 {
+    background-color: #0f0f0f;
+    border: 1px solid #ffffff;
+    border-radius: 2.625rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.125rem;
+    cursor: pointer;
+    text-wrap: nowrap;
+  }
+  #hero-btn-2 a {
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+  .hero-right-container {
+    display: inline-block;
+  }
+  .habit-section-container {
+    display: inline-block;
+  }
+  .habit-section-title-des h1 {
+    text-align: center;
+  }
+  .habit-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .habit-types-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .featured-box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
+    max-width: 22.0625rem;
+    max-height: fit-content;
+    margin-top: 3.5rem;
+
+    /* padding: 0.5rem; */
+  }
+  .featured-box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    gap: 1.5rem;
+  }
+  .featured-box-content button {
+    align-self: stretch;
+  }
+
+  .featured-content-title {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+  }
+  .featured-content-desctription {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.01875rem;
+  }
+  .featured-content-desctription br {
+    display: none;
+  }
+  .featured-box-image {
+    width: 17.9375rem;
+    height: 10.625rem;
+    border-radius: 1.125rem;
+    background-image: url(./images/run.jpg);
+    background-repeat: no-repeat;
+    background-position: -800px -200px;
+    background-size: auto;
+    margin-bottom: 2.19rem;
+    margin-left: 2rem;
+  }
+  .bmi-title-description {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.875rem;
+  }
+  .calculator-parent {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .team-section {
+    display: inline-flex;
+  }
+  .team-member-box-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
