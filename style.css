@@ -12,17 +12,24 @@
 /* shared style  */
 
 /* header and hero section style  */
+header {
+  background-color: transparent;
+}
 .header-hero-section-container {
   width: 100%;
-  height: 100vh;
-  /* background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0) 100%); */
+  height: 44.6875rem;
+  background: linear-gradient(180deg, #111 70%, rgba(119, 119, 119, 0) 100%);
   margin: 0 auto;
+}
+
+.hero-container {
+  max-width: 90rem;
 }
 /* navbar section style starts */
 .nav-container {
   display: flex;
-  /* width: 66.25rem; */
-  justify-content: space-evenly;
+  width: 66.25rem;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   padding: 3.56rem 0rem 2rem 0rem;
@@ -89,13 +96,10 @@
   /* border: 2px solid whitesmoke; */
   display: flex;
   background-color: transparent;
+  position: relative;
 }
 .hero-right-container > .hero-cardbox {
   position: absolute;
-
-  /* display: flex;
-  flex-direction: column;
-  justify-content: flex-start; */
   padding: 0.7rem 1.5rem;
   height: fit-content;
   width: fit-content;
@@ -111,6 +115,18 @@
 .hero-right-container > .hero-cardbox > p {
   color: #8a8a8a;
   background-color: transparent;
+}
+
+#cardbox-1 {
+  bottom: 21rem;
+  right: -5.5rem;
+  text-wrap: nowrap;
+}
+
+#cardbox-2 {
+  bottom: 4rem;
+  right: 15rem;
+  text-wrap: nowrap;
 }
 
 .hero-title {
